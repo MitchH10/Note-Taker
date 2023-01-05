@@ -10,6 +10,7 @@ if (window.location.pathname === '/notes') {
   saveNoteBtn = document.querySelector('.save-note');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
+  console.log("GTG");
 }
 
 // Show an element
@@ -73,6 +74,7 @@ const handleNoteSave = () => {
   };
   saveNote(newNote).then(() => {
     getAndRenderNotes();
+    console.log('get and rendernotes');
     renderActiveNote();
   });
 };
@@ -85,7 +87,7 @@ const handleNoteDelete = (e) => {
   const note = e.target;
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
-  if (activeNote.id === noteId) {
+  if (activeNote.id == noteId) {
     activeNote = {};
   }
 
@@ -97,7 +99,7 @@ const handleNoteDelete = (e) => {
 
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
-  e.preventDefault();
+  //e.preventDefault();
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
   renderActiveNote();
 };
