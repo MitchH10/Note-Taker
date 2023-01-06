@@ -3,6 +3,8 @@
 ## Description
 This is a note taking application that runs in the browser using an api that stores notes on the server-side. This is an express.js application.
 
+![Alt text](./public/assets/img/Screenshot.png "Screenshot")
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -45,3 +47,7 @@ To test simply create a note and have fun.
 For any questions contact me on: <br />
 Github: [https://github.com/MitchH10](github.com/MitchH10) or <br />
 Email: [mjh10@live.com](mjh10@live.com)
+
+## Link to repo
+[https://github.com/MitchH10/Note-Taker](https://github.com/MitchH10/Note-Taker)
+
